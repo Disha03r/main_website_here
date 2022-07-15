@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University</title>
+        <link rel="stylesheet" href="guess.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                
+                <a href="shiv.html"><img src="image/logo.png"></a>
+                
+                <div class="nav-links" id="here">
+                    <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="shiv.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>  
+                
+                <i class="fa fa-bars" onclick="showMenu()"></i> 
+                
+                    <div class="i">
+                        <a href="form.html">Sign up</a>
+            
+                    </div>     
+                
+             </nav>
+             
+        <div class="text-box">
+            <h1>GOENKA COLLEGE</h1>
+            <p>Welcome to our College<br>Make your dreams come true here</p>
+            
+        </div>
+        
+        </section>
+        
+
+        <section class="course">
+            <h1> COURSES WE OFFER</h1>
+            <p>We offer so many courses choose as per your interest</p>
+            <div class="row">
+                <div class="col">
+                    <h3>Diploma</h3>
+                    <p>We provide Diploma courses for students who don't want to take up a full-time course,<br>
+                        can opt for this course.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3>UnderGraduate</h3>
+                    <p>University provides range of Undergraduate courses for students from any field.<br>
+                        We provide you foreign language UGcourse as well.</p>
+                </div>
+                <div class="col">
+                    <h3>Post-Graduate</h3>
+                    <p>University  offers Post-Graduate course in all streams.<br>
+                        (Science,Comercs,Humanities).
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section class="Campus">
+            <h1> CAMPUS</h1>
+            <p>Quick glace at our campus</p>
+            <div class="row">
+                <div class="Ccol">
+                    <img src="image/library.png">
+                    <img src="image/girl.png">
+                </div>
+                <div class="Ccol">
+                    <img src="image/view.png">
+                    <img src="image/photo.png">
+                </div>
+                <div class="Ccol">
+                    <img src="image/students.png">
+                    <img src="image/playg.png">
+                </div>
+        </section>
+
+        
+
+        
+        <section class="Events">
+            <h1> EVENTS</h1>
+            <p>Events organised in college</p>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="image/trad.png" style="width:100%">
+              <div class="text">Cultural Event</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="image/dance3.png" style="width:100%">
+              <div class="text">Dance competition</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="image/muev.png" style="width:100%">
+              <div class="text">Music event</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4/ 4</div>
+                <img src="image/ffas.png" style="width:100%">
+                <div class="text">Fashion show</div>
+              </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+            
+            
+            </section>
+            <section class="Reviews">
+                <h1>Student Review</h1>
+                <p>Here is the review section of our College.<br>Review given by college graduates</p>
+                <div class="row">
+                    <div class="ReCol">
+                        <img src="image/girl.png">
+                    <div>
+                        <p>Hello My name is Sourabh. I am a graduate from this college.<br>
+                        I want to say that this university has the best teachers and faculty.
+                        Teacher's are really helpful and supportive</p>
+                        <h3>SOURABH</h3>
+                    </div>
+                </div>
+                    <div class="ReCol">
+                        <img src="image/girl.png">
+                    <div>
+                        <p>Hi I am a B.sc graduate. I love the infrastructure and all the facilities provided
+                            to students.<br>I highly recommend you to take admission in this college for sure.
+                        </p>
+                        <h3>RIYA</h3>
+                    </div>
+                </div>
+                </div>
+    
+            </section>
+            
+
+<section class="ctd">
+    <h1>Enroll here</h1>
+    <a href="contact.html" class="btn">CONTACT US</a>
+</section>
+
+
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
+<script>
+    var here=document.getElementById("here");
+    function showMenu(){
+        here.style.right="0";
+    }
+    function hideMenu(){
+        here.style.right="-200px";
+    }
+</script>
+<section class="footer">
+    <h4>About us</h4>
+    <p> Follow us on social media  for more information</p>
+    <div class="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        
+
+    </div>
+</section>
+    </body>
+</html>
